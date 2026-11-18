@@ -1,5 +1,6 @@
 #pagina1 {
   background-image: url("Imagens/Fundo2.png");
+  --s: max(100vw / 1300, 100vh / 736);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,18 +8,20 @@
   background-attachment: fixed;
 }
 
-#pagina1 div {
-  text-align: center;
-}
-
 #botao-iniciar {
   background-color: #ba0d00;
   color: white;
-  border: 5px solid white;
-  border-radius: 30px;
-  font-size: 30px;
-  padding: 5px 50px;
-  margin-top: 70vh;
+  border: calc(3 * var(--s)) solid white;
+  border-radius: calc(22 * var(--s));
+  font-size: calc(22 * var(--s));
+  padding: 0;
+  position: fixed;
+  box-sizing: border-box;
+  width: calc(487 * var(--s));
+  height: calc(44 * var(--s));
+  left: calc(50vw - 241 * var(--s));
+  top: calc(50vh + 88 * var(--s));
+  margin: 0;
   transition: 0.15s;
 }
 
