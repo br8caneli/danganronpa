@@ -1,0 +1,324 @@
+#pagina1 {
+  background-image: url("Imagens/Fundo2.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#pagina1 div {
+  text-align: center;
+}
+
+#botao-iniciar {
+  background-color: #ba0d00;
+  color: white;
+  border: 5px solid white;
+  border-radius: 30px;
+  font-size: 30px;
+  padding: 5px 50px;
+  margin-top: 70vh;
+  transition: 0.15s;
+}
+
+#botao-iniciar a {
+  color: white;
+  text-decoration: none;
+}
+
+#botao-iniciar:hover {
+  background-color: #ff0000;
+  cursor: pointer;
+
+  transition: 0.15s;
+  transform: scale(1.1);
+}
+
+#pagina2 {
+  margin: 0;
+  background-image: url("Imagens/FundoPag.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.topo {
+  width: 100%;
+  height: 100px;
+  background-color: #f0509a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 30px;
+}
+
+.topo a {
+  color: white;
+  text-decoration: none;
+}
+
+.topo a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+#pagina2 h1 {
+  margin: 0 0 24px;
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px rgba(240, 80, 154, 0.5);
+}
+
+.conteudo-principal {
+  width: 68%;
+  margin: 100px auto 0;
+  padding: 28px 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+  border: 3px solid black;
+
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.tabela {
+  width: 100%;
+  margin-bottom: 24px;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.tabela th,
+.tabela td {
+  border: 1px solid #f0509a;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.tabela thead th,
+.tabela tbody th {
+  background-color: #f0509a;
+  color: white;
+}
+
+.botao-steam {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 25px;
+  background-color: #f0509a;
+  color: white;
+  text-decoration: none;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+.botao-steam:hover {
+  background-color: #d83b83;
+  transform: scale(1.05);
+}
+
+.link-topo {
+  color: #f0509a;
+}
+
+.monokuma-canto {
+  height: 82px;
+  width: auto;
+  position: absolute;
+  top: 9px;
+}
+
+.monokuma-esquerda {
+  left: 220px;
+  transform: scaleX(-1);
+  transition: 0.3s;
+}
+
+.monokuma-direita {
+  right: 220px;
+  transition: 0.3s;
+}
+
+.monokuma-canto:hover {
+  animation: rubberBand 1s;
+  cursor: pointer;
+}
+
+@keyframes rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.monokuma-esquerda:hover {
+  animation-name: rubberBandLeft;
+}
+
+@keyframes rubberBandLeft {
+  0% {
+    transform: scale3d(-1, 1, 1);
+  }
+  30% {
+    transform: scale3d(-1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(-0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(-1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(-0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(-1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(-1, 1, 1);
+  }
+}
+
+#inicio {
+  transition: transform 0.3s ease-in-out;
+}
+
+#inicio:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#hope-peak-academy {
+  transition: transform 0.3s ease-in-out;
+}
+
+#hope-peak-academy:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#pagina-principal {
+  transition: transform 0.3s ease-in-out;
+}
+
+#pagina-principal:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px rgba(240, 80, 154, 0.5);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+p {
+  text-align: center;
+  color: black;
+}
+
+h2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+div.conteudo-principal form {
+  margin: 24px auto;
+  max-width: 720px;
+}
+
+div.conteudo-principal fieldset {
+  margin-bottom: 18px;
+  padding: 18px;
+  border: 2px solid #f0509a;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+div.conteudo-principal legend {
+  padding: 0 8px;
+  color: #d83b83;
+  font-weight: bold;
+}
+
+div.conteudo-principal form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+div.conteudo-principal form input[type="text"],
+div.conteudo-principal form input[type="email"],
+div.conteudo-principal form select,
+div.conteudo-principal form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 6px 0;
+  padding: 10px;
+  border: 1px solid #d83b83;
+  border-radius: 8px;
+  font: inherit;
+}
+
+div.conteudo-principal form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.conteudo-principal form li {
+  margin: 6px 0;
+  padding-left: 28px;
+  background-image: url("Imagens/monocoin.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px 20px;
+}
+
+div.conteudo-principal form button {
+  display: block;
+  margin: 18px auto 0;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f0509a;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+div.conteudo-principal form button:hover {
+  background-color: #d83b83;
+}

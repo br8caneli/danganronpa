@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hope's Peak Academy - Inscrições</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="icon" type="image/png" href="Imagens/icone.png" />
+  </head>
+
+  <body id="pagina2">
+    <div class="topo">
+      <img
+        src="Imagens/monokuma_simples.png"
+        alt="Monokuma" class="monokuma-canto monokuma-esquerda"
+      />
+      <a href="index.html" id="inicio">INÍCIO</a>
+      <a href="pagina-principal.html" id="pagina-principal">PÁGINA PRINCIPAL</a>
+      <a href="hope-peak-academy.html" id="hope-peak-academy"
+        >HOPE'S PEAK ACADEMY</a
+      >
+      <img
+        src="Imagens/monokuma_simples.png"
+        alt="Monokuma" class="monokuma-canto monokuma-direita"
+      />
+    </div>
+
+    <div class="conteudo-principal">
+      <h1>INSCRIÇÃO NA HOPE'S PEAK ACADEMY</h1>
+      <p>
+        Você tem um talento extraordinário? A Hope's Peak Academy procura
+        estudantes excepcionais prontos para transformar suas habilidades em um
+        futuro brilhante. Junte-se a uma escola de elite onde cada aluno tem a
+        oportunidade de mostrar ao mundo o que o torna único.
+      </p>
+      <p>
+        O processo seletivo é exclusivo: a academia reúne alunos reconhecidos
+        por talentos extraordinários e até reserva uma vaga para um estudante
+        escolhido por sorteio. Faça sua candidatura e dê o próximo passo rumo a
+        uma experiência escolar inesquecível. Seu talento pode ser o seu
+        passaporte para a Hope's Peak!
+      </p>
+
+      <h2>FORMULÁRIO DE CANDIDATURA</h2>
+      <form method="get">
+        <fieldset>
+          <legend>Dados do candidato</legend>
+
+          <label for="nome-candidato">Nome completo</label>
+          <input
+            type="text"
+            id="nome-candidato"
+            name="nome"
+            placeholder="Digite seu nome completo"
+            autocomplete="name"
+            required
+          />
+
+          <label for="email-candidato">E-mail</label>
+          <input
+            type="email"
+            id="email-candidato"
+            name="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+
+          <label for="talento-candidato">Talento especial</label>
+          <select id="talento-candidato" name="talento" required>
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option value="academico">Talento acadêmico</option>
+            <option value="artistico">Talento artístico</option>
+            <option value="esportivo">Talento esportivo</option>
+            <option value="outro">Outro talento</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Alguns exemplos de áreas de talento</legend>
+          <ul>
+            <li>Ciências e pesquisa</li>
+            <li>Artes e música</li>
+            <li>Esportes e desempenho físico</li>
+            <li>Estratégia e jogos</li>
+          </ul>
+        </fieldset>
+
+        <label for="motivacao-candidato">Por que deseja estudar aqui?</label>
+        <textarea
+          id="motivacao-candidato"
+          name="motivacao"
+          placeholder="Conte por que deseja estudar na Hope's Peak"
+          rows="5"
+          required
+        ></textarea>
+
+        <label>
+          <input type="checkbox" name="confirmacao" required />
+          Confirmo que as informações fornecidas são verdadeiras.
+        </label>
+
+        <button type="submit">Enviar candidatura</button>
+      </form>
+    </div>
+  </body>
+</html>
